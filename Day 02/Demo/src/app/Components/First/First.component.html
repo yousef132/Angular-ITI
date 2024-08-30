@@ -1,0 +1,55 @@
+<h1>this is first component</h1>
+<p>name</p>
+<p>{{name}}</p>
+
+6+6
+{{6+6}}
+
+<input type="text" value="{{name}}" >
+<br>
+<input type="text" [value] = "name" >
+<br>
+<!-- one way binding from [ts] to [html]-->
+<input [type]="type" value="click" >
+
+
+<!--event binding-->
+
+<input type="submit" (click) = "changeName()">
+
+
+<img src="https://images.unsplash.com/photo-1724674117588-088d2781cb81?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8" alt="">
+
+
+<img src="bernhard-QwEbrhkvUlY-unsplash.jpg" alt="">
+
+<img [src]="ImgSrc" (mouseover) ="changeImgSrc()" (mouseout) ="changeImgSrc2()" >
+<h1>here is new line</h1>
+
+<app-second></app-second>
+
+
+<!-- Two Way Binding [html] => [ts] => [html]-->
+
+<!-- Manually-->
+<input type="text" (input)="storeInput($event)" placeholder="first name">
+
+<p>First Name : {{firstName}}</p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!--Using Angular  [call FormsModule ===> Imports]-->
+<!-- Like asp-for=""  in asp .net mvc-->
+
+<input type="text" [(ngModel)] = "lastName" placeholder="lastName">
+
+<p>First Name : {{lastName}}</p>
+
+
+
+
