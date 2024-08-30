@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FirstComponent } from './Components/First/First.component';
 import { SecondComponent } from './Components/second/second.component';
+import { Task1Component } from './Components/task1/task1.component';
+import { Task2Component } from './Components/task2/task2.component';
 
 // each component contains 4 Parts :
 //  1- tmplate
@@ -13,7 +15,7 @@ import { SecondComponent } from './Components/second/second.component';
 @Component({
   selector: 'app-root', // selector
   standalone: true, //
-  imports: [RouterOutlet,FirstComponent,SecondComponent],
+  imports: [RouterOutlet,FirstComponent,SecondComponent,Task1Component,Task2Component],
   templateUrl: './app.component.html', // template
   styleUrl: './app.component.css' // style
 })
