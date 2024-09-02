@@ -1,5 +1,16 @@
-<app-first></app-first>
+<!-- <app-first></app-first>
 
 
 <app-task1></app-task1>
-<app-task2></app-task2>
+<app-task2></app-task2> -->
+
+<!-- <app-all-in-one></app-all-in-one> -->
+
+
+
+<div>
+  <h1>Parent</h1>
+  <p>Data: {{PartentData}} </p>
+  <app-home [DataFromParent]="ChildData"></app-home>
+  <app-login (MyEvent) = "getData($event)"></app-login>
+</div>

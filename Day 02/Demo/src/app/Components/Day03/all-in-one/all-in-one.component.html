@@ -1,0 +1,58 @@
+<!-- <div class="register-container">
+  <h2>Register</h2>
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="name">
+  </div>
+  <div class="form-group">
+    <label for="age">Age:</label>
+    <input type="number" id="age" [(ngModel)]="age">
+  </div> -->
+<!--
+  <div class="form-group">
+    <label *ngIf="age>=30;then koko;else hamada" style="color: red;" >
+      Age Not Valid
+    </label>
+  </div> -->
+
+  <!-- <div class="form-group" *ngIf="age>=30;then koko;else hamada"></div>
+
+  <div class="form-group">
+    <ng-template #hamada  >
+      <p style="color: green;">Age is Valid</p>
+    </ng-template>
+  </div>
+
+  <div class="form-group">
+    <ng-template #koko  >
+      <p style="color: red;">Age is not Valid</p>
+    </ng-template>
+  </div>
+
+  <button class="submit-btn" (click)="addEntry()">Submit</button>
+</div> -->
+
+<!-- <div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody">
+
+      <tr *ngFor="let s of Students">
+        <td>{{s.name}}</td>
+        <td>{{s.age}}</td>
+      </tr>
+
+      @for (std of Students; track $index) {
+      <tr>
+        <td>{{std.name}}</td>
+        <td *ngIf="std.age<30">{{std.age}}</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div> -->
