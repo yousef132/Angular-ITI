@@ -4,7 +4,9 @@ import { FirstComponent } from './Components/First/First.component';
 import { SecondComponent } from './Components/second/second.component';
 import { Task1Component } from './Components/task1/task1.component';
 import { Task2Component } from './Components/task2/task2.component';
-import { AllInOneComponent } from './Components/all-in-one/all-in-one.component';
+import { AllInOneComponent } from './Components/Day03/all-in-one/all-in-one.component';
+import { LoginComponent } from './Components/Day03/componentInteraction/login/login.component';
+import { HomeComponent } from './Components/Day03/componentInteraction/home/home.component';
 
 // each component contains 4 Parts :
 //  1- tmplate
@@ -22,11 +24,20 @@ import { AllInOneComponent } from './Components/all-in-one/all-in-one.component'
     Task1Component,
     Task2Component,
     AllInOneComponent,
+    LoginComponent,
+    HomeComponent
   ],
   templateUrl: './app.component.html', // template
   styleUrl: './app.component.css', // style
 })
 export class AppComponent {
-  // logic
-  title = 'Demo';
+  PartentData = "Data From Parent";
+
+  ChildData = "";
+
+  getData(data:string){
+
+    this.ChildData = data;
+    console.log(data);
+  }
 }
