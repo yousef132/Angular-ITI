@@ -8,9 +8,31 @@
 
 
 
-<div>
+<!-- <div>
   <h1>Parent</h1>
   <p>Data: {{PartentData}} </p>
   <app-home [DataFromParent]="ChildData"></app-home>
   <app-login (MyEvent) = "getData($event)"></app-login>
+</div> -->
+<!-- <h1 class="alert alert-dark">Hello world</h1>
+<app-register (Event)="GetStudentData($event)" ></app-register>
+<br>
+<br>
+<br>
+<br>
+<br>
+<app-index [Student]="Student"></app-index> -->
+
+
+<!-- <app-validations></app-validations> -->
+
+<div class="alert alert-dark w-75 m-auto text-center mt-2 mb-2">
+  <app-header></app-header>
 </div>
+
+
+
+
+  <div class="alert alert-primary w-75 m-auto text-center mt-2 mb-2">
+    <router-outlet></router-outlet>
+  </div>
