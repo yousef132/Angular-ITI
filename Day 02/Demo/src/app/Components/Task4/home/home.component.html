@@ -1,0 +1,23 @@
+<div class="container centered-form">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form [formGroup]="RegisterationForm">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input formControlName="name" type="text" class="form-control" placeholder="Enter your name">
+          @if (!NameValidation) {
+            <p class="text-danger mt-1">Name Not Valid</p>
+          }
+        </div>
+        <div class="mb-3">
+          <label for="age" class="form-label">Age</label>
+          <input formControlName="age" type="number" class="form-control" placeholder="Enter your age">
+          @if (!AgeValidation) {
+            <p class="text-danger mt-1">Age Not Valid</p>
+          }
+        </div>
+        <button type="submit" (click)="GetData()" class="btn btn-primary w-100">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
