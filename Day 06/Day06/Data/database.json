@@ -1,0 +1,48 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Ahmed Mohamed Khalid",
+      "age": 20,
+      "email": "ahmed@gmail.com",
+      "img": "https://images.unsplash.com/photo-1708806016675-dac47ebc8459?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8"
+    },
+    {
+      "id": "2",
+      "name": "Aly Yousefasdfasdf",
+      "age": 22,
+      "email": "aly@gmail.com",
+      "img": "https://images.unsplash.com/photo-1709338430706-c0bee5469038?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8"
+    },
+    {
+      "id": "3",
+      "name": "Sara",
+      "age": 25,
+      "email": "sara@gmail.com"
+    },
+    {
+      "id": "4",
+      "name": "Hala",
+      "age": 27,
+      "email": "hala@gmail.com"
+    },
+    {
+      "id": "5",
+      "name": "karim hamza",
+      "age": 23,
+      "email": "karim@gmail.com"
+    },
+    {
+      "id": "6",
+      "name": "nada",
+      "age": 28,
+      "email": "nada@gmail.com"
+    },
+    {
+      "id": "b3c6",
+      "name": "KOKO",
+      "age": "100",
+      "email": "koko@gmail.com"
+    }
+  ]
+}

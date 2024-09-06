@@ -1,0 +1,9 @@
+@for(u of users; track $index){
+  <!-- <div class="container">
+    <p>name : {{u.name}}</p>
+    <p>Email : <a routerLink="/user-details/{{u.id}}">{{u.email}}</a></p>
+  </div> -->
+
+
+  <app-user [oneUser]="u"></app-user>
+}
