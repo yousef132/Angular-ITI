@@ -1,0 +1,13 @@
+<p>student-details works!</p>
+
+<div class="alert alert-info">
+  <p>Name: {{ student.name }}</p>
+  <p>email:{{ student.email }}</p>
+  <p>age: {{ student.age }}</p>
+</div>
+<div class="w-50 m-auto d-flex justify-content-around">
+
+  <a class="btn btn-danger" routerLink="/delete-student/{{ID}}">Delete</a>
+  <a class="btn btn-warning" routerLink="/update-student/{{ID}}">Update</a>
+
+</div>

@@ -1,0 +1,14 @@
+@if(user){
+
+<div class="container">
+  <p>UserName : {{user.UserName}}</p>
+  <p>Name : {{user.name}}</p>
+  <p>email : {{user.email}}</p>
+  <p>Phone : {{user.phone}}</p>
+  <p>website : {{user.website}}</p>
+</div>
+
+}
+@else {
+  <strong>Loading....</strong>
+}

@@ -1,0 +1,11 @@
+<div class="row">
+  @for ( student of students; track student.id) {
+    <div class="col-md-4">
+      <div class="alert alert-info">
+        <p>Name: {{ student.name }}</p>
+        <p>email: <a routerLink="/students/{{student.id}}">{{ student.email }}</a></p>
+        <p>age: {{ student.age }}</p>
+      </div>
+    </div>
+  }
+</div>

@@ -11,6 +11,8 @@ import { RegisterComponent } from './Components/Day03Task/register/register.comp
 import { IndexComponent } from './Components/Day03Task/index/index.component';
 import { ValidationsComponent } from './Components/Day04/validations/validations.component';
 import { HeaderComponent } from "./Components/Day04/Routing/header/header.component";
+import { CustomDirective } from './Directives/custom.directive';
+import { TestSignalsComponent } from './Components/Day06/test-signals/test-signals.component';
 
 // each component contains 4 Parts :
 //  1- tmplate
@@ -34,7 +36,9 @@ import { HeaderComponent } from "./Components/Day04/Routing/header/header.compon
     IndexComponent,
     ValidationsComponent,
     HeaderComponent,
-    RouterModule
+    RouterModule,
+    CustomDirective,
+    TestSignalsComponent
 ],
   templateUrl: './app.component.html', // template
   styleUrl: './app.component.css', // style
@@ -48,6 +52,8 @@ export class AppComponent {
   //   this.ChildData = data;
   //   console.log(data);
   // }
+
+  salary =0;
 
   Student = { name: '', age: 0 };
   GetStudentData(std: { name: string; age: number }) {
